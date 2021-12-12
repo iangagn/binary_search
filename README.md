@@ -1,5 +1,5 @@
 # Binary search
-A collection of binary search implementations
+A collection of binary search implementations in various languages.
 
 Errors to avoid : 
 
