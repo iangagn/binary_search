@@ -1,6 +1,6 @@
 def binary_search_recursive(arr, low, high, val):
   """
-  Performs iterative binary search on a sorted array. 
+  Performs recursive binary search on a sorted array. 
 
   Parameters
   ----------
