@@ -10,8 +10,11 @@ def binary_search(arr, val):
   val : int or float
     A value to look for in arr. 
   """
+  
+  assert isinstance(arr, (list, tuple, set)), \
+       'ARG1 (arr) type must be either list, tuple or set'
 
-  l = 0
+  low = 0
   high = len(arr) - 1
 
   while low <= high:
