@@ -1,6 +1,10 @@
 # Binary search
 A collection of binary search implementations in various languages.
 
+Here is a schematic example of a successful search : 
+
+![binary_search drawio](https://user-images.githubusercontent.com/38300786/145732586-c1eb48da-963c-40e3-9730-feabd9106f43.png)
+
 Errors to avoid : 
 
   1. Off-by-one errors when calculating the boundaries.
