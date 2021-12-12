@@ -3,7 +3,7 @@ A collection of binary search implementations
 
 Errors to avoid : 
 
-  1. Off-by-one errors when calculating the boundaries of the interval.
+  1. Off-by-one errors when calculating the boundaries.
   
   2. Handling duplicate items may require that the position of the first 
      instance be returned.
