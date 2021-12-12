@@ -13,5 +13,6 @@ Errors to avoid :
   4. Handling empty arrays.
 
   Sources : 
+  
     https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html
     https://stackoverflow.com/questions/504335/what-are-the-pitfalls-in-implementing-binary-search
