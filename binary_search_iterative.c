@@ -8,7 +8,7 @@ int binary_search_iterative(const int* arr,
     
     Parameters
     ----------
-    tab : int*
+    arr : int*
         A sorted integer array.
     
     arr_size : int
