@@ -3,8 +3,7 @@ int binary_search_recursive(const int* arr,
                             const int low,
                             const high,
                             const int target)
-{
-    
+{  
     /*
     Performs recursive binary search on a sorted integer array. 
     
