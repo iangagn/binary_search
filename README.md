@@ -1,4 +1,4 @@
-# binary_search
+# Binary search
 A collection of binary search implementations
 
 Errors to avoid : 
