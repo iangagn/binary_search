@@ -1,6 +1,6 @@
 int binary_search_iterative(const int* arr,
-                            const int arr_size,
-                            const int target) 
+                            const int length,
+                            const int search_key) 
 {
     
     /*
@@ -11,28 +11,28 @@ int binary_search_iterative(const int* arr,
     arr : int*
         A sorted integer array.
     
-    arr_size : int
+    length : int
         Size of input array.
         
-    target : int
+    search_key : int
         Value to look for in input array.
         
     Returns the index at which the value is found or -1.
     */
     
     int low = 0;
-    int high = arr_size - 1;
+    int high = length - 1;
     
     while (low <= high)
     {
         
         int mid = (low + high) / 2;
         
-        if (arr[mid] < target)      // Ignore left half
+        if (arr[mid] < search_key)      // Ignore left half
         {
             low = mid + 1;
         }
-        else if (arr[mid] > target) // Ignore right half
+        else if (arr[mid] > search_key) // Ignore right half
         {
             high = mid - 1;
         }
