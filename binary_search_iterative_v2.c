@@ -16,39 +16,34 @@ int binary_search_iterative(const int* arr,
     search_key : int
         Value to look for in input array.
         
-    Returns the index at which the value is found or -1.
-    
-    Link : https://stackoverflow.com/questions/70329195/critique-my-iterative-binary-search-implementation-in-c?noredirect=1#comment124328523_70329195
+    Returns the index at which the value is found or negative one's
+    complement of lower bound for rapid insertion.
     */
     
-    size_t low = 0;
-    size_t high = arr_size;
+    int low = 0;
+    int high = length; // Avoid unecessary substraction
     
-    while (low < high)
+    while (low <= high)
     {
-        // Prevents overflow compared to (high + low)/2
-        size_t mid = low + (high - low) / 2;
         
-        // Single test results in branchless code 
-        if (arr[mid] <= target)
+        int mid = (low + high) / 2;
+        
+        if (arr[mid] < target)      // Ignore left half
         {
-            low = mid;
-        } 
-        else 
+            low = mid + 1;
+        }
+        else if (arr[mid] > target) // Ignore right half
         {
-            high = mid;
-        } 
+            high = mid - 1;
+        }
+        else
+        {
+            return mid;             // Found at mid
+        }
+        
     }
     
-    if (length > 0 && arr[low] == search_key)
-    {
-      // Returns the lowest index for a match
-      return low;
-    }
-    else
-    {
-      // Not found -> return default value
-      return -1; 
-    }
-      
+    // Not found -> return default value
+    return ~low;
+    
 }
