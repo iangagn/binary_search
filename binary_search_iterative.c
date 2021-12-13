@@ -21,7 +21,7 @@ int binary_search_iterative(const int* arr,
     */
     
     int low = 0;
-    int high = arr_size;
+    int high = arr_size - 1;
     
     while (low <= high)
     {
