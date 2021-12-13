@@ -2,7 +2,6 @@ int binary_search_iterative(const int* arr,
                             const int length,
                             const int search_key) 
 {
-    
     /*
     Performs iterative binary search on a sorted integer array. 
     
