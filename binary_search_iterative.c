@@ -32,7 +32,7 @@ int binary_search_iterative(const int* arr,
         {
             low = mid + 1;
         }
-        else if (tab[mid] > target) // Ignore right half
+        else if (arr[mid] > target) // Ignore right half
         {
             high = mid - 1;
         }
