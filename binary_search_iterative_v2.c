@@ -18,6 +18,8 @@ int binary_search_iterative(const int* arr,
         Value to look for in input array.
         
     Returns the index at which the value is found or -1.
+    
+    Link : https://stackoverflow.com/questions/70329195/critique-my-iterative-binary-search-implementation-in-c?noredirect=1#comment124328523_70329195
     */
     
     size_t low = 0;
